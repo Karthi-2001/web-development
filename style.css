@@ -1,0 +1,243 @@
+*{
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+body{
+     margin: 0;
+     padding: 0;
+     font-family: 'Open Sans', sans-serif; 
+     background-size: cover;
+}
+          /* Navigation Bar */
+header{
+     min-height: 100vh;
+     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("user.jpg");
+     width: 100%;
+     height: 100%;
+     background-position: center;
+     background-size: cover;
+     position: relative;
+}
+img{
+     width:200px;
+}
+.navbar{
+     padding: 2% 6%;
+     display:flex;
+     justify-content:space-between;
+}
+ul li{
+     display:inline;
+     margin:0px 15px;
+}
+ul li a{
+     text-decoration:none;
+     color:white;
+     font-size:15px;
+}
+.navbar ul li{
+     display: inline-block;
+}
+.navbar ul li::after{
+     content: '';
+     display: block;
+     width: 0;
+     height: 3px;
+     background: linear-gradient(to right, #6699ff 0%, #9933ff 100%);
+     transition: .3s;
+}
+.navbar ul li:hover::after{
+     width: 100%;
+     transition:.3s;
+}
+
+            /* Body   */
+
+.container{
+     color: #fff;
+     text-align: center;
+     margin-top: 170px;
+}
+.container h1{
+     text-align:center;
+     font-size: 50px;
+     font-family: 'Raleway', sans-serif;
+}
+.container p{
+     text-align:center;
+      color: #C0C0C0;
+      font-size: 15px;
+      line-height: 20px;
+      margin:-30px 0 ;
+      margin-bottom: 0px;
+}
+#button a{
+     margin-left:600px;
+     text-align:center;
+     color: white;
+     line-height:80px;
+     text-decoration:none;
+     background: linear-gradient(to right, #6666ff 0%, #9900ff 100%);
+     border: 0px solid whitesmoke;
+     border-radius: 20px;
+     padding: 10px 35px;
+}
+#button a:hover{
+     background: linear-gradient(to right, #6699ff 0%, #9933ff 100%);
+}
+
+        /* About */
+.about h2{ 
+     text-align: center;
+     font-weight: 800;
+     font-size: 36px;
+     color: #333;
+     font-family: 'Raleway', sans-serif;
+}
+.about p{
+     margin: 2% 6%;
+     font-size: 20px;
+     font-weight: 100;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+     /* Services */
+#services{
+     background:linear-gradient(to bottom right, violet, blue); 
+     min-height: 100vh;
+     padding-top: 30px;
+     width: 100%;
+     height: 100%;
+     background-position: center;
+     background-size: cover;
+     position: relative;
+}
+.services-head h3{ 
+     text-align: center;
+     font-weight: 800;
+     font-size: 36px;
+     color:#fff;
+     font-family: 'Raleway', sans-serif;
+}
+.services-head p{
+     margin: 2% 6%;
+     text-align: center;
+     color: #C0C0C0;
+     font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.containerbox h4,p{
+     text-align: center;
+}
+.container-box1,.container-box2,.container-box3{
+     color:white;
+     border: 0.5px solid whitesmoke;
+     border-radius: 15px;
+     background: linear-gradient(to bottom right, rgb(67, 67, 255),rgb(235, 112, 235)); ;
+     display: inline-block;
+     padding: 5px 15px;
+     margin-left: 130px;
+     margin-top: 20px;
+     transition: 0.5s;
+}
+.container-box1:hover{
+     box-shadow: 8px 8px 10px black;
+}
+.container-box2:hover{
+     box-shadow: 8px 8px 10px black;
+}
+.container-box3:hover{
+     box-shadow: 8px 8px 10px black;
+}
+
+    /* Gallery */
+  
+.gallery-head h2{
+     text-align: center;
+     font-weight: 800;
+     font-size: 36px;
+     color: #333;
+     font-family: 'Raleway', sans-serif;
+}
+.gallery-head p{
+     margin: 2% 6%;
+     text-align: center;
+     color: rgb(61, 61, 61);
+     font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.gallery-img1,.gallery-img2,.gallery-img3{
+     margin: 0px 12%;
+}
+
+            /* Contact */
+
+.contact{
+     margin-top: 80px;
+     background:linear-gradient(to bottom right, violet, blue); 
+     min-height: 100vh;
+     padding-top: 30px;
+     width: 100%;
+     height: 100%;
+     background-position: center;
+     background-size: cover;
+     position: relative;
+}
+.contact-head h3{
+     text-align: center;
+     font-weight: 800;
+     font-size: 36px;
+     color:#fff;
+     font-family: 'Raleway', sans-serif;
+}
+.contact-head p{
+     margin: 2% 6%;
+     text-align: center;
+     color: #C0C0C0;
+     font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+} 
+.contact-form{
+     margin: 0px 10%;
+     background:#fff;
+     display: flex;
+}
+form{
+     margin: 35px;
+}
+.input-field{
+     margin: 0px 6%;
+     width: 510px;
+     height: 40px;
+     margin-top: 20px;
+     padding-left:10px;
+     padding-right: 10px;
+     border-radius: 10px;
+     border: 0.5px solid black;
+}
+#message{
+     margin-left:6% ;
+     margin-top: 20px;
+     padding-right: 10px;
+     border-radius: 10px;
+     border: 1px solid black;
+}
+form a{
+     text-decoration: none;
+     color: white;
+     margin: 0px 6%;
+     border: 2px solid white;
+     border-radius: 25px;
+     padding: 14px 34px;
+     letter-spacing: 1px;
+     transition: 0.58s;
+}
+form a:hover{
+     background-color: white;
+     color: black;
+     transition: 0.58s;
+}
+footer h5{
+     color: gray;
+     text-align: center;
+}
